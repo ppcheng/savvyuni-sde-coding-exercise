@@ -1,39 +1,68 @@
-# savvyuni-sde-coding-exercise
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Overview
-此練習題，主要的目的是要寫一个網頁版的富文本編輯器(Rich Text Editor)，需具備以下功能:
+## Available Scripts
 
-1. 可插入圖片，并可對圖片進行大小(Size)、位置(Position)等操作
-2. 可插入數學公式，和特殊符號
-3. 可調整字体(Font)、顏色(Font Color)，字体大小(Font Size)等文字型編輯
-4. 可支持不同層級的Bullet Point，比如：
-```
-1. xxxx
-  1.1 xxx
-    1.1.1 xxx
- 2. xxxx
-  2.1 xxx
-```
-5. 理想的編輯器呈現方式為：
-  - 網頁的左則為【編輯器】
-  - 網頁的右則為【編輯器編譯后的結果】
- 
-* (Bonus) 可支持LaTex的語法輸入，尤其是其數學公式的輸入方式
+In the project directory, you can run:
 
-可使用第3方插件(3rd Party Libraries)來實現，以下是可考慮使用的工具
-1. CKEditor
-2. Slate.js
-3. Quill
-4. Summernote
-5. UEditor
-6. wangEditor
+### `npm start`
 
-非常建議考慮使用CKEditor來實現，尤其是它的v4版本，因為它提供大量可使用的Plugins。
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-實現的方式：
-1. 可使用基礎的HTML/CSS/JS來編寫以上網頁
-2. 理想的狀態，為透過ReactJS/VueJS等框架來編寫
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
 
-### Deadline
-- 於下周一，5月20號晚上11:59前，把完成好的代碼，透過pull request或email方式提交；
-- 若選擇Email方式的話，請發送到it@savvypro.ca
+### `npm test`
+
+Launches the test runner in the interactive watch mode.<br>
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
