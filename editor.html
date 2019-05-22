@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Savvypro Editor</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.ckeditor.com/ckeditor5/12.1.0/decoupled-document/ckeditor.js"></script>
+</head>
+<body>
+    <div>
+      <div class="container">
+        <h1 class="title">Editor</h1>
+        <div id="toolbar-container"></div>
+        <div id="editor">Please edit here.</div>
+        <div class="button">
+          <button id="compile">Compile</button>
+        </div>
+      </div>
+      <div class="container">
+        <h1 class="title">Results</h1>
+        <div id="results"></div>
+      </div>
+    </div>
+
+    <script>
+      let editor;
+
+      DecoupledEditor
+        .create( document.querySelector( '#editor' ) )
+        .then( newEditor => {
+            const toolbarContainer = document.querySelector( '#toolbar-container' );
+
+            toolbarContainer.appendChild( newEditor.ui.view.toolbar.element );
+
+            editor = newEditor;
+        } )
+        .catch( error => {
+            console.error( error );
+        } );
+
+      $('#compile').on('click', function (e) {
+          e.preventDefault();
+          $('#results').html(editor.getData());
+      })
+    </script>
+
+    <style>
+      .container {
+        width: 48%; float: left; display: inline; margin-left: 20px
+      }
+
+      .container h1 {
+        color: grey;
+      }
+
+      .button {
+        margin: 20px;
+        float: right;
+      }
+    </style>
+</body>
+</html>
